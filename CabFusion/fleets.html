@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cab Fusion|Fleets</title>
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+         <a href="https://api.whatsapp.com/send?phone=7385597810&text=Hello..." class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="logo">
+                <h2>Cab Fusion</h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="#" class="active">Fleets</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+            <button class="login-btn">LOG IN</button>
+        </nav>
+    </header>
+
+   <!--Serach Start-->
+    <div class="box">
+        <form name="bookinghome" action="" method="post">
+        <table style="border-spacing: 9px; padding-left: 150px" >
+            <tbody>
+                <tr>
+                    <td><select name="srcloc" style="height: 50px; width: 150px;background:white;text-align: center;">
+                            <option selected>Pick-up Location</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Mumbai">Nashik</option>
+                            <option value="Aurangabad">Aurangabad</option>
+                        </select>
+                    </td>
+                    <td><select name="destloc" style="height: 50px; width: 150px; background:white; text-align: center;">
+                            <option selected>Drop Location</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Mumbai">Nashik</option>
+                            <option value="Aurangabad">Aurangabad</option>
+                        </select>
+                    </td>
+                    <td><input type="date" name="pickdate" style="height: 50px; width: 150px; text-align: center;">
+                    </td>
+                    <td><input type="time" name="picktime" style="height: 50px; width: 150px; text-align: center">
+                    </td>
+                    <td><select name="car" style="height: 50px; width: 150px;background:white;text-align: center;">
+                            <option selected>Select a Car</option>
+                            <option value="SUV">SUV</option>
+                            <option value="MUV">MUV</option>
+                            <option value="Sedan">Sedan</option>
+                        </select>
+                    </td>
+                    <td>
+                      <button type="submit" class="button button1" name="book">Book Now</button>                       
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </form>
+    </div>
+     <!-- Search end -->
+  
+  <!--Slideshow -->
+  <div class="slide" style="background: url(images/aboutus.jpg) center/cover no-repeat;">
+    <h3>FLEETS</h3>
+  </div>
+   <!--Slideshow end-->
+  
+ <!--Fleets listing -->
+  <div class="container">
+    <div class="text">
+       <h1> FIND YOUR CAR </h1>
+    </div>
+  <div class="cardcontainer" style="border-radius: 8px;">
+   
+    <div class="flcard">
+        <img src="images/fortuner.png" style="width: 250px;height: 300px;margin-left: auto; margin-right: auto;">
+        <div class="service">
+            <h3 style="color: #2b2e4a">FORTUNER</h3><br>
+            <p style="text-align: center;">SUV | 7 SEATER </p>  
+        </div>
+        <button type="submit" style="margin-left: 90px; width: 200px; height: 50px"  class="button button1" name="book" onclick="booking.html">Book Now</button>
+    </div>
+    <div class="flcard">
+        <img src="images/dzire.png" style="width: 250px;height: 300px;margin-left: auto; margin-right: auto;">
+        <div class="service">
+            <h3 style="color: #2b2e4a">SWIFT DZIRE</h3><br>
+            <p style="text-align: center;">SEDAN | 5SEATER </p>
+        </div>
+        <button type="submit" style="margin-left: 90px; width: 200px; height: 50px"  class="button button1" name="book">Book Now</button>
+    </div>
+      <div class="flcard">
+        <img src="images/punch.png" style="width: 250px;height: 300px;margin-left: auto; margin-right: auto;">
+        <div class="service">
+            <h3 style="color: #2b2e4a">TATA PUNCH</h3><br>
+            <p style="text-align: center;">SUV | 5 SEATER </p>
+        </div>
+        <button type="submit" style="margin-left: 90px; width: 200px; height: 50px"  class="button button1" name="book">Book Now</button>
+    </div>
+    <div class="flcard">
+        <img src="images/creta.png" style="width: 250px;height: 300px;margin-left: auto; margin-right: auto;">
+        <div class="service">
+            <h3 style="color: #2b2e4a">CRETA</h3><br>
+            <p style="text-align: center;">SUV | 5 SEATER </p>
+        </div>
+        <button type="submit" style="margin-left: 90px; width: 200px; height: 50px"  class="button button1" name="book">Book Now</button>
+    </div>
+     <div class="flcard">
+        <img src="images/ertiga.png" style="width: 250px;height: 300px;margin-left: auto; margin-right: auto;">
+        <div class="service">
+            <h3 style="color: #2b2e4a">ERTIGA</h3><br>
+            <p style="text-align: center;">SUV | 7 SEATER </p>
+        </div>
+        <button type="submit" style="margin-left: 90px; width: 200px; height: 50px"  class="button button1" name="book">Book Now</button>
+    </div>
+    <div class="flcard">
+        <img src="images/nexon.png" style="width: 250px;height: 300px;margin-left: auto; margin-right: auto;">
+        <div class="service">
+            <h3 style="color: #2b2e4a">TATA NEXON</h3><br>
+            <p style="text-align: center;">SUV | 5 SEATER </p>
+        </div>
+        <button type="submit" style="margin-left: 90px; width: 200px; height: 50px"  class="button button1" name="book">Book Now</button>
+    </div>
+   <br><br><br> <br><br><br>
+  </div>
+  <!--Fleets listing end-->
+    
+
+    <!--Login/Signup -->
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+               <!--  <h2>Welcome Back</h2>
+                <p>Please log in using your personal information to stay connected with us.</p> -->
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+               <!--  <h2>Create Account</h2>
+                <p>To become a part of our community, please sign up using your personal information.</p> -->
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Enter your email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#" class="option">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--Login/Signup END-->
+
+<!--Footer -->
+     <div class="footertext">
+         <div class="column">
+            <img src=images/footerlogo.png style="width:150px;height: 150px;">
+            <div style="margin-left: 30px">
+              <a href="https://www.facebook.com/shraddha.chavan.90226628"> <i class="fa fa-facebook-square" style="font-size:25px;"></i></a>&nbsp;&nbsp;
+              <a href="https://www.instagram.com/shraddha.cvn"> <i class="fa fa-instagram" style="font-size:25px;"></i></a>&nbsp;&nbsp;
+              <i class="fa fa-twitter" style="font-size:25px;"></i>
+            </div>
+         </div>
+         <div class="column">
+            <p style="color: orange;">Company</p>
+            <ul class="pages">
+               <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="fleets.html">Fleets</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="column">
+                <p>Subscribe to our Newsletter</p>
+                <input type="email" name="subscribe" required style="height:50px; width: 80%" placeholder="Your Email...">
+              <br>
+                <button class="button button1" style="height: 50px; width:80%" type="submit" name="book">Subscribe</button>
+        </div>
+     </div>
+    <footer>
+        <small style="padding-left: 560px">&copy All rights reserved 2024.</small>
+        <small style="padding-left: 400px;">Developed by Shraddha :)</small>
+    </footer>
+    <!--Footer end-->
+
+
+
+
+</body>
+</html>

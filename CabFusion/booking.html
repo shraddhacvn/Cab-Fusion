@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cab Fusion|Fleets</title>
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="script.js" defer></script>
+<style type="text/css">
+        
+body {
+  background: #fff;
+}
+
+
+div.elem-group {
+  margin: 20px 0;
+}
+
+div.elem-group.inlined {
+  width: 49%;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+}
+
+label {
+  display: block;
+  font-family: 'Nanum Gothic';
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
+
+input, select, textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  width: 100%;
+  padding: 10px;
+}
+
+div.elem-group.inlined input {
+  width: 95%;
+  display: inline-block;
+}
+
+textarea {
+  height: 250px;
+}
+
+hr {
+  border: 1px dotted #ccc;
+}
+
+button {
+  height: 50px;
+  background: orange;
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2px solid black;
+}
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="logo">
+                <h2>Cab Fusion</h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#">Book Now</a></li>
+                <li><a href="fleets.html" class="active">Fleets</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+            <button class="login-btn">LOG IN</button>
+        </nav>
+    </header>
+ <a href="https://api.whatsapp.com/send?phone=7385597810&text=Hello..." class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+   <!--Serach Start-->
+    <div class="box">
+        <form name="bookinghome" action="" method="post">
+        <table style="border-spacing: 9px; padding-left: 150px" >
+            <tbody>
+                <tr>
+                    <td><select name="srcloc" style="height: 50px; width: 150px;background:white;text-align: center;">
+                            <option selected>Pick-up Location</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Mumbai">Nashik</option>
+                            <option value="Aurangabad">Aurangabad</option>
+                        </select>
+                    </td>
+                    <td><select name="destloc" style="height: 50px; width: 150px; background:white; text-align: center;">
+                            <option selected>Drop Location</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Mumbai">Nashik</option>
+                            <option value="Aurangabad">Aurangabad</option>
+                        </select>
+                    </td>
+                    <td><input type="date" name="pickdate" style="height: 50px; width: 150px; text-align: center;">
+                    </td>
+                    <td><input type="time" name="picktime" style="height: 50px; width: 150px; text-align: center">
+                    </td>
+                    <td><select name="car" style="height: 50px; width: 150px;background:white;text-align: center;">
+                            <option selected>Select a Car</option>
+                            <option value="SUV">SUV</option>
+                            <option value="MUV">MUV</option>
+                            <option value="Sedan">Sedan</option>
+                        </select>
+                    </td>
+                    <td>
+                      <button type="submit" class="button button1" name="book">Book Now</button>                       
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </form>
+    </div>
+     <!-- Search end -->
+  
+  <!--Slideshow -->
+  <div class="slide" style="background: url(images/book-hero.jpg) center/cover no-repeat;">
+  </div>
+   <!--Slideshow end-->
+  
+ <form onsubmit="alert('Your ride has been booked successfully !')" style="width: 500px; margin: 0 auto; padding: 50px;" action=" " method="post">
+  <div class="elem-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="visitor_name" placeholder="Enter your Name" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input type="email" id="email" name="visitor_email" placeholder="Enter your email id" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Your Phone</label>
+    <input type="tel" id="phone" name="visitor_phone" placeholder="Enter your phone number" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+  </div>
+  <hr>
+  <div class="elem-group inlined">
+    <label for="adult">Adults</label>
+    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="child">Children</label>
+    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="Pickupdate">Pick up date</label>
+    <input type="date" id="pickup-date" name="pickupdate" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="pickuptime">Pick up time</label>
+    <input type="time" id="pickup-time" name="pickuptime" required>
+  </div>
+
+  <div class="elem-group">
+    <label for="src-selection">Select Pickup Location</label>
+    <select id="src-selection" name="src_preference" required>
+        <option value="">Choose Pick-up location</option>
+        <option value="Nashik">Nashik</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Aurangabad">Aurangabad</option>
+        <option value="Pune">Pune</option>
+        <option value="Shirdi">Shirdi</option>
+
+    </select>
+  </div>
+
+  <div class="elem-group">
+    <label for="drop-selection">Select Drop off Location</label>
+    <select id="drop-selection" name="drop_preference" required>
+        <option value="">Choose Drop off location</option>
+        <option value="Nashik">Nashik</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Aurangabad">Aurangabad</option>
+        <option value="Pune">Pune</option>
+        <option value="Shirdi">Shirdi</option>
+
+    </select>
+  </div>
+
+
+
+  <div class="elem-group">
+    <label for="car-selection">Select Car</label>
+    <select id="car-selection" name="car_preference" required>
+        <option value="">Choose a Car from the List</option>
+        <option value="dzire">Swift Dzire</option>
+        <option value="fortuner">Fortuner</option>
+        <option value="nexon">Nexon</option>
+        <option value="creta">Creta</option>
+        <option value="ertiga">Ertiga</option>
+
+    </select>
+  </div>
+  <hr>
+  <div class="elem-group">
+    <label for="message">Anything Else?</label>
+    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+  </div>
+  <button type="submit">Book your Ride</button>
+</form>
+    
+
+    <!--Login/Signup -->
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+               <!--  <h2>Welcome Back</h2>
+                <p>Please log in using your personal information to stay connected with us.</p> -->
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+               <!--  <h2>Create Account</h2>
+                <p>To become a part of our community, please sign up using your personal information.</p> -->
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Enter your email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#" class="option">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--Login/Signup END-->
+
+
+     <!--Footer -->
+     <div class="footertext">
+         <div class="column">
+            <img src=images/footerlogo.png style="width:150px;height: 150px;">
+            <div style="margin-left: 30px">
+              <a href="https://www.facebook.com/shraddha.chavan.90226628"> <i class="fa fa-facebook-square" style="font-size:25px;"></i></a>&nbsp;&nbsp;
+              <a href="https://www.instagram.com/shraddha.cvn"> <i class="fa fa-instagram" style="font-size:25px;"></i></a>&nbsp;&nbsp;
+              <i class="fa fa-twitter" style="font-size:25px;"></i>
+            </div>
+         </div>
+         <div class="column">
+            <p style="color: orange;">Company</p>
+            <ul class="pages">
+               <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="fleets.html">Fleets</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="column">
+                <p>Subscribe to our Newsletter</p>
+                <input type="email" name="subscribe" required style="height:50px; width: 80%" placeholder="Your Email...">
+              <br>
+                <button class="button button1" style="height: 50px; width:80%" type="submit" name="book">Subscribe</button>
+        </div>
+     </div>
+    <footer>
+        <small style="padding-left: 560px">&copy All rights reserved 2024.</small>
+        <small style="padding-left: 400px;">Developed by Shraddha :)</small>
+    </footer>
+    <!--Footer end-->
+
+
+
+</body>
+</html>

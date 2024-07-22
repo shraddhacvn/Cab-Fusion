@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Contact Page</title>
+	<script type="text/javascript">
+		function formfunction()
+		{
+			let name = document.form1.name.value;
+			let email = document.form1.email.value;
+			let number = document.form1.number.value;
+
+			alert("Form has been submitted successfully !!!");
+
+		}
+	</script>
+</head>
+
+<body>
+	<div>
+		<form name="form1" method="post" action="">
+				<div class="row">
+					<label>Contact Us</label>
+				</div>
+				<div class="row">
+					<label>Name</label>
+					<input type="text" name="name" size="30px" required>
+				</div>
+				<div class="row">
+					<label>Email</label>
+					<input type="text" name="email" size="30px" required>
+				</div>
+				<div>
+					<label>Mobile Number</label>
+					<input type="number" name="number" size="30px" required>
+				</div>
+				<div>
+					<input type="submit" name="submit" value="Send" onclick="formfunction()">
+				</div>
+		</form>
+	</div>	
+</body>
+</html>
